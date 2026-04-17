@@ -38,6 +38,37 @@ export class FilmDto {
   language: LanguageDto;
 }
 
+class ActorDto {
+  @ApiProperty({ description: '演员ID', example: 1 })
+  actor_id: number;
+
+  @ApiProperty({ description: '名', example: 'Penelope' })
+  first_name: string;
+
+  @ApiProperty({ description: '姓', example: 'Guiness' })
+  last_name: string;
+}
+
+export class FilmDetailDto extends FilmDto {
+  @ApiProperty({ description: '租赁时长（天）', example: 6 })
+  rental_duration: number;
+
+  @ApiProperty({ description: '替换费用', example: '20.99' })
+  replacement_cost: string;
+
+  @ApiProperty({
+    description: '特殊功能',
+    example: ['Deleted Scenes', 'Behind the Scenes'],
+  })
+  special_features: string[];
+
+  @ApiProperty({ description: '演员列表', type: [ActorDto] })
+  actors: ActorDto[];
+
+  @ApiProperty({ description: '分类', example: ['Documentary'] })
+  categories: string[];
+}
+
 export class PaginationMetaDto {
   @ApiProperty({ description: '总记录数', example: 1000 })
   total: number;

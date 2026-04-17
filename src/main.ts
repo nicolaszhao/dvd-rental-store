@@ -16,8 +16,8 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('DVD Rental API')
-    .setDescription('DVD 租赁数据库 API 文档')
+    .setTitle('DVD Rental Store API')
+    .setDescription('DVD 租赁商店数据库 API 文档')
     .setVersion('1.0')
     .addTag('films', '电影相关接口')
     .addTag('customers', '客户相关接口')
