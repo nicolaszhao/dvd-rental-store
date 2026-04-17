@@ -1,8 +1,8 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiOkResponse } from '@nestjs/swagger';
-import { CustomerService } from './customer.service';
-import { CustomerQueryDto } from './dto/customer-query.dto';
-import { CustomerListResponseDto } from './dto/customer-response.dto';
+import { CustomerService } from './customer.service.js';
+import { CustomerQueryDto } from './dto/customer-query.dto.js';
+import { CustomerListResponseDto } from './dto/customer-response.dto.js';
 
 @ApiTags('customers')
 @Controller('customers')

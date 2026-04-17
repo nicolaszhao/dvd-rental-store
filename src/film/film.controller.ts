@@ -1,8 +1,8 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiOkResponse } from '@nestjs/swagger';
-import { FilmService } from './film.service';
-import { FilmQueryDto } from './dto/film-query.dto';
-import { FilmListResponseDto } from './dto/film-response.dto';
+import { FilmService } from './film.service.js';
+import { FilmQueryDto } from './dto/film-query.dto.js';
+import { FilmListResponseDto } from './dto/film-response.dto.js';
 
 @ApiTags('films')
 @Controller('films')

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import { FilmQueryDto } from './dto/film-query.dto';
+import { PrismaService } from '../prisma/prisma.service.js';
+import { FilmQueryDto } from './dto/film-query.dto.js';
 
 @Injectable()
 export class FilmService {
