@@ -15,7 +15,7 @@ Username: `postgres`
 database connection string:
 
 ```
-postgresql://postgres:123456@127.0.0.1:5432/dvdrental?schema=public
+postgresql://postgres:******@127.0.0.1:5432/dvdrental?schema=public
 ```
 
 ### Docs & Guide
